@@ -1,7 +1,9 @@
 
 [MASTER]
 # This directory contains example python that doesn't need to be linted.
-ignore-paths=.*test/micro/resources/.*
+ignore-paths=
+    .*test/micro/.*
+    .*test/sample/.*
 
 [MAIN]
 load-plugins = pylint_per_file_ignores

@@ -1,6 +1,9 @@
+"""
+    Config POCO
+"""
 import os
 from dataclasses import dataclass
-from typing import Optional, Any, Union
+from typing import Optional, Any
 
 from auth_source.types import CredentialBlock
 
@@ -59,7 +62,8 @@ def make_config(credential_block: Optional[CredentialBlock]) -> Optional[Config]
 
         app_id = _get_value_with_fallbacks(credential_block, "app_id", "CONAN_GITHUB_APP_ID")
         private_key = _get_value_with_fallbacks(credential_block, "app_private_key", "CONAN_GITHUB_APP_PRIVATE_KEY")
-        installation_id = _get_value_with_fallbacks(credential_block, "app_installation_id", "CONAN_GITHUB_APP_INSTALLATION_ID")
+        installation_id = _get_value_with_fallbacks(credential_block, "app_installation_id",
+                                                    "CONAN_GITHUB_APP_INSTALLATION_ID")
         if all([app_id, private_key, installation_id]):
             return Config(
                 type=credential_block.get("type"),

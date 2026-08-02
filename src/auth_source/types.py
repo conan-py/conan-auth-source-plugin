@@ -1,5 +1,7 @@
+"""
+    Python typing definitions.
+"""
 from typing import Dict, Optional, TypedDict, List
-
 
 CredentialBlock = TypedDict(
     "CredentialBlock",

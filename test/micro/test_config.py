@@ -1,14 +1,9 @@
-from io import StringIO
-from textwrap import dedent
-from typing import Optional, Type
+from typing import Optional
 
 import pytest
-from conan.internal.model.options import Options
-from conan.internal.model.profile import Profile
 
 from auth_source.config import make_config, Config
-from auth_source.source_credentials import find_first_credentials
-from auth_source.types import SourceCredentials, CredentialBlock
+from auth_source.types import CredentialBlock
 
 
 class TestSourceCredentialsJson:

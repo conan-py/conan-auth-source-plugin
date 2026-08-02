@@ -1,5 +1,9 @@
+"""
+    A Conan plugin module.
+"""
 
-def auth_source_plugin(url:str, **kwargs):
+
+def auth_source_plugin(url: str, **kwargs):
     """
         This is a conan plugin, that conforms to the plugin definition in Conan.
 
@@ -22,5 +26,3 @@ def auth_source_plugin(url:str, **kwargs):
     # pylint: disable=import-outside-toplevel
     from auth_source.auth_source_plugin import plugin
     return plugin(url, **kwargs)
-
-

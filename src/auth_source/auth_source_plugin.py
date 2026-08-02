@@ -1,3 +1,6 @@
+"""
+    The implementation of the auth source plugin
+"""
 import logging
 from typing import Optional
 
@@ -32,8 +35,7 @@ def plugin(url: str) -> Optional[AuthSourceDetails]:
                 if token:
                     headers = credentials.get("headers")
                     return {"token": token, "headers": headers} if headers else {"token": token}
-                else:
-                    logger.warning("Failed to get github application token '%s'", url)
+                logger.warning("Failed to get github application token '%s'", url)
             else:
                 logger.warning("Failed to make configuration for '%s'", url)
         else:
