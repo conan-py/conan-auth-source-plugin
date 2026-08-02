@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# Version used only when no SCM metadata is available (e.g. building from a
+# source tarball without a .git directory). Clean tagged git builds produce
+# the exact tag version and ignore this; untagged git builds derive a
+# dev version like "0.1.dev12+g1a2b3c4".
+fallback_version = "0.0.0.dev0"
