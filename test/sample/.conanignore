@@ -1,0 +1,3 @@
+# Ignore everything, exception the sameple `source_credentials.json`
+metadata
+!source_credentials.json

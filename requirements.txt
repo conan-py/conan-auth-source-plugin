@@ -1,0 +1,58 @@
+# Decentralized, open-source (MIT), C/C++ package manager.
+#
+# see:
+#   - https://pypi.org/project/conan/
+conan >= 2.31.1
+
+
+#   - https://pypi.org/project/jinja2/
+jinja2 >= 3.1.6
+
+# PyGitHub is a Python library to access the GitHub REST API.
+#
+# see:
+#  - https://pypi.org/project/PyGithub/
+PyGithub >= 2.9.1
+
+#  A build and deploy dependency. Used for semantics versions.
+#
+#  see:
+#  - https://pypi.org/project/packaging/
+packaging >= 26.2
+
+#  Only used for developement
+#
+pytest >= 9.1.1
+
+# Pylint is a static code analyser for Python 2 or 3
+#
+# see:
+#   - https://pypi.org/project/pylint/
+pylint >= 4.0.6
+
+#  This pylint plugin will enable per-file-ignores in your project
+#
+# see:
+#   - https://pypi.org/project/pylint-per-file-ignores/
+#   - https://github.com/SAP/pylint-per-file-ignores
+pylint-per-file-ignores >= 3.2.1
+
+# pip is the package installer for Python.
+#
+# see:
+#  - https://pypi.org/project/pip/
+pip >= 26.1.2
+
+#
+# see:
+#  - https://pypi.org/project/setuptools/
+setuptools >= 83.0.0
+
+# https://pypi.org/project/setuptools-scm/
+setuptools_scm >= 10.2.0
+
+# https://pypi.org/project/build/
+build >= 1.5.0
+
+# https://pypi.org/project/twine/
+twine >= 6.2.0

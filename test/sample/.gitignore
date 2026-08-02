@@ -1,0 +1,7 @@
+/auth-key.pem
+/conanbuild.bat
+/conanbuildenv.bat
+/conanrun.sh
+/conanrunenv.sh
+/deactivate_conanbuild.bat
+/deactivate_conanrun.sh

@@ -1,0 +1,16 @@
+
+[MASTER]
+# This directory contains example python that doesn't need to be linted.
+ignore-paths=.*test/micro/resources/.*
+
+[MAIN]
+load-plugins = pylint_per_file_ignores
+
+[FORMAT]
+max-line-length = 120
+
+
+[MESSAGES CONTROL]
+# Allow tests classes to have a single test method
+per-file-ignores =
+  **/test_*.py:too-few-public-methods

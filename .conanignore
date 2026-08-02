@@ -1,0 +1,14 @@
+README.md
+setup.py
+requirements.txt
+LICENSE
+.gitignore
+.editorconfig
+.pylintrc
+
+test/**
+src/**
+.github/**
+.venv/**
+.idea/**
+.pytest_cache/**

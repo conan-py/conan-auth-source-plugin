@@ -1,0 +1,50 @@
+name: Publish Python Package to PyPI
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+# Least privilege: the workflow only needs to read the repo.
+permissions:
+  contents: read
+
+jobs:
+  build-and-publish:
+    name: Build distribution
+    runs-on: ubuntu-latest
+
+    # Required for Trusted Publishing
+    environment:
+      name: pypi
+      url: https://pypi.org/p/conan-auth-source-plugin
+    permissions:
+      id-token: write  # MANDATORY: Allows GitHub to request the OIDC token from PyPI
+
+    steps:
+      #  https://github.com/actions/checkout
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # setuptools_scm needs tags/history so the version tag can be used
+
+      # https://github.com/actions/setup-python
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+
+      - name: Install build tooling
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build source and wheel distributions
+        run: python -m build
+
+      - name: Check distribution metadata
+        run: twine check dist/*
+
+      # https://github.com/pypa/gh-action-pypi-publish
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
