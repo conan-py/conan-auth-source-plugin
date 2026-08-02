@@ -26,7 +26,7 @@ setup(
     entry_points={
         "console_scripts": [
             # An entry point to install this plugin into conan
-            "conan-auth-source-install = auth_source.installer:main",
+            "conan-auth-source-plugin-install = auth_source.installer:main",
         ],
     },
 )

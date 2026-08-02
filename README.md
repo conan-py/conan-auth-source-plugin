@@ -12,7 +12,7 @@ into the conan installation.
 
 ```shell
 python -m pip install conan-auth-source-plugin
-conan-auth-source-install
+conan-auth-source-plugin-install
 ```
 
 # Configuration
@@ -123,6 +123,7 @@ pip install --editable .
 
 # Links
 
+ - https://pypi.org/project/conan-auth-source-plugin 
  - https://github.com/conan-io/conan-extensions/tree/main
  - https://docs.conan.io/2/reference/extensions/authorization_plugins.html
  - https://docs.conan.io/2/reference/config_files/source_credentials.html
