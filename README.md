@@ -1,4 +1,4 @@
-# [conan-auth-source](https://github.com/conan-py/conan-auth-source)
+# [conan-auth-source](https://github.com/conan-py/conan-auth-source-plugin)
 
 A Conan authentication source plugin, implemented as a python module. Conan supports both a *remote*
 and a *source* authentication, where the remotes are used for interacting with a remote for
