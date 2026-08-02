@@ -5,6 +5,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="conan-auth-source-plugin",
+    description="A python module to provide GitHub application authorisation for source downloads",
+    long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
     use_scm_version=True,
     package_dir={
         "": "src",

@@ -1,3 +1,13 @@
+[project]
+name = "conan-auth-source-plugin"
+dynamic = ["version"]
+requires-python = ">=3.13"
+dependencies = [
+    "conan>=2.25,<3.0",
+    "packaging>=26.2",
+    "PyGithub>=2.9.1",
+]
+
 [build-system]
 requires = ["setuptools>=64", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"

@@ -41,7 +41,7 @@ pylint-per-file-ignores >= 3.2.1
 #
 # see:
 #  - https://pypi.org/project/pip/
-pip >= 26.1.2
+pip >= 26.2
 
 #
 # see:
