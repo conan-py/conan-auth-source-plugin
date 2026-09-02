@@ -102,7 +102,7 @@ supported by the Conan client.
 
 - when using the `get()` method in a `conanfile.py`, provide a filename parameter
   with a representative name (e.g. 'archive.tgz') so that conan can write the download
-  to disk.  The filename should be expressed in the `conandat.yml`.
+  to disk.  The filename should be expressed in the `conandata.yml`.
 
 # Development
 
