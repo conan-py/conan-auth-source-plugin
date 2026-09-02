@@ -76,7 +76,7 @@ This requires an installation access token for authentication.
 
 # Why use this plugin module
 
-This module is a shift-left style strategy for authentication. Instead of using this pluing
+This module is a shift-left style strategy for authentication. Instead of using this plugin
 a build pipeline (or any Conan build) can pre-authenticate with all github organisation/repositores
 that *may* be needed during a build.
 
