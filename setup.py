@@ -24,7 +24,7 @@ setup(
         "PyGithub>=2.9.1"
     ],
     package_data={
-        "auth_source_extensions.plugins": ["plugin_auth_source.py"],
+        "auth_source_extensions.plugins": ["auth_source.py"],
     },
     entry_points={
         "console_scripts": [
