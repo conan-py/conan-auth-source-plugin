@@ -48,7 +48,7 @@ def main():
     target_dir.mkdir(parents=True, exist_ok=True)
     destination = target_dir / "auth_source.py"
 
-    resource = files("extensions.plugins").joinpath("auth_source.py")
+    resource = files("auth_source_extensions.plugins").joinpath("auth_source.py")
     with as_file(resource) as src:
         shutil.copyfile(src, destination)
 
